@@ -1,0 +1,12 @@
+C:\Code\AgeCalculator\TestAgeCalculator\bin\Debug\TestAgeCalculator.dll
+C:\Code\AgeCalculator\TestAgeCalculator\bin\Debug\TestAgeCalculator.pdb
+C:\Code\AgeCalculator\TestAgeCalculator\bin\Debug\AgeCalculator.dll
+C:\Code\AgeCalculator\TestAgeCalculator\bin\Debug\nunit.framework.dll
+C:\Code\AgeCalculator\TestAgeCalculator\bin\Debug\AgeCalculator.pdb
+C:\Code\AgeCalculator\TestAgeCalculator\bin\Debug\nunit.framework.pdb
+C:\Code\AgeCalculator\TestAgeCalculator\bin\Debug\nunit.framework.xml
+C:\Code\AgeCalculator\TestAgeCalculator\obj\Debug\TestAgeCalculator.csprojAssemblyReference.cache
+C:\Code\AgeCalculator\TestAgeCalculator\obj\Debug\TestAgeCalculator.csproj.CoreCompileInputs.cache
+C:\Code\AgeCalculator\TestAgeCalculator\obj\Debug\TestAgeCalculator.csproj.CopyComplete
+C:\Code\AgeCalculator\TestAgeCalculator\obj\Debug\TestAgeCalculator.dll
+C:\Code\AgeCalculator\TestAgeCalculator\obj\Debug\TestAgeCalculator.pdb
