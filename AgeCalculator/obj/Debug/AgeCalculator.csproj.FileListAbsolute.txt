@@ -4,3 +4,9 @@ C:\Code\AgeCalculator\AgeCalculator\obj\Debug\AgeCalculator.csprojAssemblyRefere
 C:\Code\AgeCalculator\AgeCalculator\obj\Debug\AgeCalculator.csproj.CoreCompileInputs.cache
 C:\Code\AgeCalculator\AgeCalculator\obj\Debug\AgeCalculator.dll
 C:\Code\AgeCalculator\AgeCalculator\obj\Debug\AgeCalculator.pdb
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\AgeCalculator\bin\Debug\AgeCalculator.dll
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\AgeCalculator\bin\Debug\AgeCalculator.pdb
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\AgeCalculator\obj\Debug\AgeCalculator.csprojAssemblyReference.cache
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\AgeCalculator\obj\Debug\AgeCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\AgeCalculator\obj\Debug\AgeCalculator.dll
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\AgeCalculator\obj\Debug\AgeCalculator.pdb

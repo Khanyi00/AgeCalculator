@@ -10,3 +10,15 @@ C:\Code\AgeCalculator\TestAgeCalculator\obj\Debug\TestAgeCalculator.csproj.CoreC
 C:\Code\AgeCalculator\TestAgeCalculator\obj\Debug\TestAgeCalculator.csproj.CopyComplete
 C:\Code\AgeCalculator\TestAgeCalculator\obj\Debug\TestAgeCalculator.dll
 C:\Code\AgeCalculator\TestAgeCalculator\obj\Debug\TestAgeCalculator.pdb
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\TestAgeCalculator\bin\Debug\TestAgeCalculator.dll
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\TestAgeCalculator\bin\Debug\TestAgeCalculator.pdb
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\TestAgeCalculator\bin\Debug\AgeCalculator.dll
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\TestAgeCalculator\bin\Debug\nunit.framework.dll
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\TestAgeCalculator\bin\Debug\AgeCalculator.pdb
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\TestAgeCalculator\bin\Debug\nunit.framework.pdb
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\TestAgeCalculator\bin\Debug\nunit.framework.xml
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\TestAgeCalculator\obj\Debug\TestAgeCalculator.csprojAssemblyReference.cache
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\TestAgeCalculator\obj\Debug\TestAgeCalculator.csproj.CoreCompileInputs.cache
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\TestAgeCalculator\obj\Debug\TestAgeCalculator.csproj.CopyComplete
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\TestAgeCalculator\obj\Debug\TestAgeCalculator.dll
+C:\Users\Khanyisile Mathe\Downloads\AgeCalculator\TestAgeCalculator\obj\Debug\TestAgeCalculator.pdb

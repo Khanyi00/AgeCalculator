@@ -17,7 +17,7 @@ namespace AgeCalculator
             var currentDateMonth = currentDate.Month;
             var currentDateDay = currentDate.Day;
 
-            for (int i = dobYear; i < currentDateYear; i++)
+            for (int year = dobYear; year < currentDateYear; year++)
             {
                 if (dobYear < currentDateYear)
                 {
@@ -25,16 +25,33 @@ namespace AgeCalculator
                 }
             }
 
-            if (dobMonth < currentDateMonth)
+
+            if (currentDateMonth < dobMonth)
             {
                 age = age - 1;
             }
 
             if (dobMonth == currentDateMonth)
             {
-                if (dobDay < currentDateDay)
+                if (dobYear % 4 != 0 && currentDateDay < dobDay)
                 {
                     age = age - 1;
+                }
+
+                if (dobYear % 4 == 0)
+                {
+                    if (currentDateMonth == dobMonth)
+                    {
+                        if (dobDay == 29 && currentDateYear % 4 != 0)
+                        {
+                            var nextMonthMarch = currentDateMonth + 1;
+
+                            if (currentDateMonth != nextMonthMarch && currentDateDay != 01)
+                            {
+                                age = age - 1;
+                            }
+                        }
+                    }
                 }
             }
 
