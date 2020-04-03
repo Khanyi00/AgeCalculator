@@ -14,7 +14,7 @@ namespace TestAgeCalculator
             //Arrange
 
             var itsTheDayIWasBorn = new DateTime(1990, 09, 12);
-            var dob = GetDob();
+            var dob = new DateTime(1990,09,12);
 
             //Act
 
@@ -32,7 +32,7 @@ namespace TestAgeCalculator
             //Arrange
 
             var itsTheDayBeforeMyFirstBirthday = new DateTime(1991, 09, 11);
-            var dob = GetDob();
+            var dob = new DateTime(1990, 09, 12);
 
             //Act
 
@@ -51,7 +51,7 @@ namespace TestAgeCalculator
             //Arrange
 
             var itsMyFirstBirthday = new DateTime(1991, 09, 12);
-            var dob = GetDob();
+            var dob = new DateTime(1990, 09, 12);
 
             //Act
 
@@ -71,7 +71,7 @@ namespace TestAgeCalculator
             //Arrange
 
             var itsMyThirdBirthday = new DateTime(1993, 09, 12);
-            var dob = GetDob();
+            var dob = new DateTime(1990, 09, 12);
 
             //Act
 
@@ -88,7 +88,7 @@ namespace TestAgeCalculator
             //Arrange
 
             var itsTheDayBeforeMyThirdBirthday = new DateTime(1993, 09, 11);
-            var dob = GetDob();
+            var dob = new DateTime(1990, 09, 12);
 
             //Act
 
@@ -105,7 +105,7 @@ namespace TestAgeCalculator
             //Arrange
 
             var itsTheMonthBeforeMyThirdBirthday = new DateTime(1993, 08, 12);
-            var dob = GetDob();
+            var dob = new DateTime(1990, 09, 12);
 
             //Act
 
@@ -123,7 +123,7 @@ namespace TestAgeCalculator
             //Arrange
 
             var itsTheDayAfterMyThirdBirthday = new DateTime(1993, 09, 13);
-            var dob = GetDob();
+            var dob = new DateTime(1990, 09, 12);
 
             //Act
 
@@ -140,7 +140,7 @@ namespace TestAgeCalculator
             //Arrange
 
             var itsTheDayAfterMyThirdBirthday = new DateTime(1993, 10, 13);
-            var dob = GetDob();
+            var dob = new DateTime(1990, 09, 12);
 
             //Act
 
@@ -157,7 +157,7 @@ namespace TestAgeCalculator
             //Arrange
 
             var itsTheDayAfterMyThirdBirthday = new DateTime(1993, 08, 11);
-            var dob = GetDob();
+            var dob = new DateTime(1990, 09, 12);
 
             //Act
 
@@ -176,7 +176,7 @@ namespace TestAgeCalculator
             //Arrange
 
             var itsDayBeforeMyFirstBirthdayInNoneLeapYear = new DateTime(1993, 02, 28);
-            var dob = GetDobInLeapYear();
+            var dob = new DateTime(1992, 02, 29);
 
             //Act
 
@@ -193,7 +193,7 @@ namespace TestAgeCalculator
             //Arrange
 
             var itsMyFirstBirthdayInNoneLeapYear = new DateTime(1993, 03, 01);
-            var dob = GetDobInLeapYear();
+            var dob = new DateTime(1992, 02, 29);
 
             //Act
 
@@ -210,7 +210,7 @@ namespace TestAgeCalculator
             //Arrange
 
             var itsMySecondBirthdayInNoneLeapYear = new DateTime(1994, 03, 01);
-            var dob = GetDobInLeapYear();
+            var dob = new DateTime(1992, 02, 29);
 
             //Act
 
@@ -227,7 +227,7 @@ namespace TestAgeCalculator
             //Arrange
 
             var itsADayAfterMySecondBirthdayInNoneLeapYear = new DateTime(1994, 03, 02);
-            var dob = GetDobInLeapYear();
+            var dob = new DateTime(1992, 02, 29);
 
             //Act
 
@@ -243,8 +243,8 @@ namespace TestAgeCalculator
         {
             //Arrange
 
-            var itsOneMonthBeforeMyThirdBirthdayInNoneLeapYear = new DateTime(1995, 02, 26);
-            var dob = GetDobInLeapYear();
+            var itsOneMonthBeforeMyThirdBirthdayInNoneLeapYear = new DateTime(1995, 01, 26);
+            var dob = new DateTime(1992, 02, 29);
 
             //Act
 
@@ -261,11 +261,28 @@ namespace TestAgeCalculator
             //Arrange
 
             var itsMyThirdBirthdayInNoneLeapYear = new DateTime(1995, 03, 02);
-            var dob = GetDobInLeapYear();
+            var dob = new DateTime(1992, 02, 29);
 
             //Act
 
             var age = GetAge(dob, itsMyThirdBirthdayInNoneLeapYear);
+
+            //Assert
+
+            Assert.AreEqual(age, 3);
+        }
+
+        [Test]
+        public void CalculateAge_GivenItsOneMonthAfterMyThirdBirthdayInNoneLeapYear_ShouldReturn3()
+        {
+            //Arrange
+
+            var itsOneMonthAfterMyThirdBirthdayInNoneLeapYear = new DateTime(1995, 04, 21);
+            var dob = new DateTime(1992, 02, 29);
+
+            //Act
+
+            var age = GetAge(dob, itsOneMonthAfterMyThirdBirthdayInNoneLeapYear);
 
             //Assert
 
@@ -278,7 +295,7 @@ namespace TestAgeCalculator
             //Arrange
 
             var itsMyFourthBirthdayInLeapYear = new DateTime(1996, 03, 01);
-            var dob = GetDobInLeapYear();
+            var dob = new DateTime(1992, 02, 29);
 
             //Act
 
@@ -289,18 +306,6 @@ namespace TestAgeCalculator
             Assert.AreEqual(age, 4);
         }
 
-
-        public DateTime GetDob()
-        {
-            var dob = new DateTime(1990, 09, 12);
-            return dob;
-        }
-
-        public DateTime GetDobInLeapYear()
-        {
-            var dob = new DateTime(1992, 02, 29);
-            return dob;
-        }
 
         private static int GetAge(DateTime dob, DateTime currentDateTime)
         {

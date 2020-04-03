@@ -7,7 +7,6 @@ namespace AgeCalculator
         public static int CalculateAge(DateTime dob, DateTime currentDate)
 
         {
-            var age = 0;
 
             var dobYear = dob.Year;
             var dobMonth = dob.Month;
@@ -17,44 +16,22 @@ namespace AgeCalculator
             var currentDateMonth = currentDate.Month;
             var currentDateDay = currentDate.Day;
 
-            for (int year = dobYear; year < currentDateYear; year++)
+            var age = currentDateYear - dobYear;
+
+            if (dobYear % 4 == 0)
             {
-                if (dobYear < currentDateYear)
+                if (currentDateMonth == dobMonth && dobDay == 29 || currentDateMonth <= dobMonth)
                 {
-                    age++;
-                }
+                    age = age - 1;
+                }//until March 1 upwards
             }
-
-
-            if (currentDateMonth < dobMonth)
+            else
             {
-                age = age - 1;
-            }
-
-            if (dobMonth == currentDateMonth)
-            {
-                if (dobYear % 4 != 0 && currentDateDay < dobDay)
+                if (currentDateMonth < dobMonth || currentDateDay < dobDay)
                 {
                     age = age - 1;
                 }
-
-                if (dobYear % 4 == 0)
-                {
-                    if (currentDateMonth == dobMonth)
-                    {
-                        if (dobDay == 29 && currentDateYear % 4 != 0)
-                        {
-                            var nextMonthMarch = currentDateMonth + 1;
-
-                            if (currentDateMonth != nextMonthMarch && currentDateDay != 01)
-                            {
-                                age = age - 1;
-                            }
-                        }
-                    }
-                }
             }
-
             return age;
         }
     }
